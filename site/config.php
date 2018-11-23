@@ -8,7 +8,7 @@ class DB
 	private static $dbport = 5432; // port du serveur
 	private static $dbuname = "postgres"; // login
 	private static $dbpass = "changeme"; // mot de passe
-	private static $dbname = "simple-course"; // nom de la base de données
+	private static $dbname = "FELINE"; // nom de la base de données
 	////////////////////////////////////////////////////////////////////////////
 	public static function get()
 	{

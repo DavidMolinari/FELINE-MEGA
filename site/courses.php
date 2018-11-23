@@ -18,7 +18,7 @@ error_reporting(E_ALL);
 <?php
 include ('config.php');
 // On appelle la méthode statique get() de la classe DB qui renvoit une instance du PDO.
-$request = DB::get()->query('select * from course');
+$request = DB::get()->query('select * from client');
 ?>
 	<table>
 		<caption>Liste des cours disponibles</caption>
@@ -35,9 +35,9 @@ $request = DB::get()->query('select * from course');
 while($data = $request->fetch()) {
 	?>
 	<tr>
-		<td><?php echo	$data['code']; ?></td> <!-- 'code' est une colonne de la BDD. -->
-		<td><?php echo	$data['name']; ?></td>
-		<td><?php echo	$data['description']; ?></td>
+		<td><?php echo	$data['nom']; ?></td> <!-- 'code' est une colonne de la BDD. -->
+		<td><?php echo	$data['prenom']; ?></td>
+		<td><?php echo	$data['email']; ?></td>
 	</tr>
 	<?php
 }
